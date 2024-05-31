@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="cssFiles/style.css">
+
+</head>
+<body class="bg-salmon flex gap-12 flex-col">
+  <header class="grid grid-cols-1 lg:flex lg:justify-between py-4 px-2   bg-white">
+    <div class="flex gap-2 w-full">
+      <div class="w-10" id="burger">
+        <svg class="lg:hidden" width="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+      </div>
+    <h1 class="text-lg  text-peach font-bold">Zemnanit Beauty Salons</h1>
+    </div>
+      
+    <nav class="grid w-full grid-cols-1 lg:text-center lg:grid-cols-6 gap-2 self-end mr-4" id="nav-links">
+      <a class="font-semibold hover:text-peach" href="home.html">Home</a>
+      <a class="font-semibold hover:text-peach" href="salons_page.html">Salons</a>
+      <a class=" font-semibold hover:text-peach"  href="appointments.html">Appointments</a>
+      <a class=" font-semibold hover:text-peach"  href="about_page.html">About</a>
+      <a class=" font-semibold hover:text-peach"  href="contact_page.html">Contact</a>
+      <a id="log" onclick="logout() " class="hover:cursor-pointer font-semibold hover:text-peach">Logout</a>
+
+    </nav>
+  </header> 
+
+  <form class="form flex flex-col gap-3 self-center">
+
+    <div><label class="font-semibold">Enter your full name:</label>
+      <input class="p-2 w-full rounded "  type="text" id="name" placeholder="Enter Your Full Name"></div>
+    
+      <div><label class="font-semibold">Enter your email:</label>
+        <input class="p-2 w-full rounded" type="text" id="email" placeholder="Enter Your email"></div>
+    
+      <div> <label class="font-semibold">Choose style:</label>
+        <select class="w-full p-2 text-peach text-semibold" id="style">
+          <option value="shuruba">shuruba</option>
+          <option value="kutirtir">kutirtir</option>
+          <option value="publis">publis</option>
+          <option value="blow out">blow out</option>
+        </select></div>
+      
+      <div>
+        <label class="font-semibold">Choose Date and Time:</label>
+        <div class="flex gap-2">
+          <input class="p-2 text-peach outline-none" id="date" type="date">
+        <select class="p-2 text-peach text-semibold" id="time" name="style">
+          <option value="1:00AM">1:00AM</option>
+          <option value="2:00AM">2:00AM</option>
+          <option value="3:00AM">3:00AM</option>
+          <option value="4:00AM">4:00AM</option>
+          <option value="5:00AM">5:00AM</option>
+          <option value="6:00AM">6:00AM</option>
+          <option value="8:00PM">8:00PM</option>
+          <option value="9:00PM">9:00PM</option>
+          <option value="10:00PM">10:00PM</option>
+          <option value="11:00PM">11:00PM</option>
+          <option value="12:00PM">12:00PM</option>
+          <option value="1:00PM">1:00PM</option>
+          </select>
+        </div>
+        
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <label class="font-semibold">Additional Comment:</label>
+        <textarea class="p-10 outline-none" placeholder= "Provide any specific instruction or additional comment..." id="comment"> </textarea>
+      <div class="self-center">
+        <button class="p-2 bg-peach text-white rounded" type="submit" id="updateButton" onclick="redirect()">Book</button>
+      </div>
+        
+      </div>
+     
+
+      
+    </select>
+  </form>
+
+  <footer class="felx flex-col bg-white align-bottom mt-16">
+    <p>Nourish Your Hair , Nurture Your Charm
+    </p>
+    <p class="self-end">~Zemnanit</p>
+  </footer>
+  
+  <script src="javascript/user-feature/app.js"></script>
+
+</body>
+</html>

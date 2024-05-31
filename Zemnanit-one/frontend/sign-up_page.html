@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+
+  <link rel="stylesheet" href="cssFiles/style.css">
+</head>
+<body class="bg-salmon py-20 flex flex-col justify-center items-center gap-10">
+  
+  <div class="text-center">
+    <h1 class="text-peach text-xl font-bold">
+    Zemnanit Beauty Salons
+  </h1>
+  <p>Create your very own account!</p></div>
+
+<main class="bg-salmon h-full flex flex-col  items-center gap-5">
+  <div class="flex flex-col">
+    <label for="name">Full Name:</label>
+    <input class="p-2 outline-none rounded-lg" id="name" type="text" placeholder="Enter your Full Name">
+  </div>
+  <div class="flex flex-col">
+    <label for="email">Enter your email</label>
+    <input class="p-2 outline-none rounded-lg" id="email" type="text" placeholder="Enter your email">
+  </div>
+  <div class="flex flex-col">
+    <label for="age">Age:</label>
+    <input class="p-2 outline-none rounded-lg" id="age" type="text" placeholder="Enter your age">
+  </div>
+  <div class="flex flex-col">
+    <label for="password">Password</label>
+    <input class="p-2 outline-none rounded-lg" id="password" type="password" placeholder="Enter your password">
+  </div>
+  <div class="flex flex-col">
+    <label for="confirm">Confirm Password</label>
+    <input class="p-2 outline-none rounded-lg" id="confirmPass" type="password" placeholder="Enter your password">
+  </div>
+  <div >
+    <button class=" bg-peach hover:border border-peach border-4 hover:text-peach hover:bg-salmon active:opacity-10 px-2 py-3 rounded-lg text-white font-semibold" type="submit" id="submit">
+      Create Account
+    </button>
+  </div>
+</main>
+<script src="javascript/user-feature/signup.js"></script>
+
+</body>
+</html>
+

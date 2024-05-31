@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cssFiles/style.css">
+
+
+  <title>Salons</title>
+</head>
+
+<body class="bg-salmon flex gap-12 flex-col">
+  <header class="grid grid-cols-1 lg:flex lg:justify-between py-4 px-2   bg-white">
+    <div class="flex gap-2 w-full">
+      <div class="w-10" id="burger">
+        <svg class="lg:hidden" width="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </g>
+        </svg>
+      </div>
+      <h1 class="text-lg  text-peach font-bold">Zemnanit Beauty Salons</h1>
+    </div>
+
+    <nav class="grid w-full grid-cols-1 lg:text-center lg:grid-cols-6 gap-2 self-end mr-4" id="nav-links">
+      <a class="font-semibold hover:text-peach" href="home.html">Home</a>
+      <a class="font-semibold hover:text-peach" href="salons_page.html">Salons</a>
+      <a class=" font-semibold hover:text-peach" href="appointments.html">Appointments</a>
+      <a class=" font-semibold hover:text-peach" href="about_page.html">About</a>
+      <a class=" font-semibold hover:text-peach" href="contact_page.html">Contact</a>
+      <a id="log" onclick="logout() " class="hover:cursor-pointer font-semibold hover:text-peach">Logout</a>
+
+    </nav>
+  </header>
+  <main class="w-3/4 self-center flex flex-col lg:m-10 m-20 gap-2 ">
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 ">
+      <div class="bg-white text-center justify-center p-4">
+        <div class="w-32 h-32 m-auto flex justify-center self-center">
+          <img class="w-full h-full " src="images/hair1.jpg" alt="poster">
+        </div>
+        <p>Salon Name</p>
+        <div class="flex gap-2 justify-center">
+          <svg width="16" viewBox="-4 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+            fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>location</title>
+              <desc>Created with Sketch Beta.</desc>
+              <defs> </defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-106.000000, -413.000000)"
+                  fill="#CE4E4E">
+                  <path
+                    d="M118,422 C116.343,422 115,423.343 115,425 C115,426.657 116.343,428 118,428 C119.657,428 121,426.657 121,425 C121,423.343 119.657,422 118,422 L118,422 Z M118,430 C115.239,430 113,427.762 113,425 C113,422.238 115.239,420 118,420 C120.761,420 123,422.238 123,425 C123,427.762 120.761,430 118,430 L118,430 Z M118,413 C111.373,413 106,418.373 106,425 C106,430.018 116.005,445.011 118,445 C119.964,445.011 130,429.95 130,425 C130,418.373 124.627,413 118,413 L118,413 Z"
+                    id="location" sketch:type="MSShapeGroup"> </path>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <p>Location</p>
+
+        </div>
+        <button class="bg-peach text-white py-1 px-2 rounded-full">
+          <a href="book.html"> Book here</a>
+        </button>
+      </div>
+
+      <div class="bg-white text-center">
+        <div class="w-32 h-32 m-auto flex justify-center self-center">
+          <img class="w-full h-full self-center" src="images/hair2.jpg" alt="poster">
+        </div>
+        <p>Salon Name</p>
+        <div class="flex gap-2 justify-center">
+          <svg width="16" viewBox="-4 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+            fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>location</title>
+              <desc>Created with Sketch Beta.</desc>
+              <defs> </defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-106.000000, -413.000000)"
+                  fill="#CE4E4E">
+                  <path
+                    d="M118,422 C116.343,422 115,423.343 115,425 C115,426.657 116.343,428 118,428 C119.657,428 121,426.657 121,425 C121,423.343 119.657,422 118,422 L118,422 Z M118,430 C115.239,430 113,427.762 113,425 C113,422.238 115.239,420 118,420 C120.761,420 123,422.238 123,425 C123,427.762 120.761,430 118,430 L118,430 Z M118,413 C111.373,413 106,418.373 106,425 C106,430.018 116.005,445.011 118,445 C119.964,445.011 130,429.95 130,425 C130,418.373 124.627,413 118,413 L118,413 Z"
+                    id="location" sketch:type="MSShapeGroup"> </path>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <p>Location</p>
+        </div>
+        <button class="bg-peach text-white py-1 px-2 rounded-full">
+          <a href="book.html"> Book here</a>
+        </button>
+      </div>
+
+      <div class="container mt-5 text-center">
+
+
+
+
+        <div id="body">
+
+
+
+        </div>
+
+
+      </div>
+
+  </main>
+
+
+
+
+</body>
+<script src="javascript/salons-feature/pop.js"></script>
+<script src="javascript/salons-feature/salons_page.js"></script>
+
+</html>
